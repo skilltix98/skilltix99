@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILLTIX - Master Your Future</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <div class="logo-icon">
+    <img src="logo1-removebg-preview.png" alt="Logo" style="width:80px; height:auto;">
+</div>
+            <h1 class="logo-text">SKILLTIX</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#" id="loginBtn">Login</a></li>
+            <li><a href="#" class="bell-icon"><i class="fa-regular fa-bell"></i></a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Floating Buttons -->
+    <div class="floating-sidebar">
+        <a href="#" onclick="alert('Calling 9754435790...')" class="float-btn call-btn" title="Call Us">
+            <i class="fa-solid fa-phone-volume"></i>
+        </a>
+
+    </div>
+
+    <!-- Hero Section --> 
+<section class="hero-section">
+    <div class="hero-content">
+        
+
+        <img src="Unlock Image.png" 
+             alt="Study Image" class="hero-img">
+
+        <div class="hero-text">
+            <h1>Unlock Your Potential with Our Courses.</h1>
+            <p>Learn from industry experts and get certified.</p>
+            <p>One step towards success.</p>
+        </div>
+
+    </div>
+</section>
+
+<style>
+/* Background */
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1522199670076-2852f80289c7?auto=format&fit=crop&w=1600&q=80')
+        center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Glass Card */
+.hero-content {
+    width: 85%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Image */
+.hero-img {
+    width: 350px;
+    height: 220px;
+    border-radius: 15px;
+    object-fit: cover;
+    animation: slideIn 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+/* Text Section */
+.hero-text h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    animation: zoomIn 1.8s ease-out forwards;
+    opacity: 0;
+}
+
+.hero-text p {
+    color: #eaeaea;
+    font-size: 1.2rem;
+    animation: zoomIn 2.2s ease-out forwards;
+    opacity: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 90%;
+        height: 200px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+}
+</style>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2 class="animate-text">Welcome to SKILLTIX</h2>
+        <p>Ignite your potential with world-class education.</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Us</h2>
+        <div class="glass-container reveal">
+            <p class="about-text">
+                SKILLTIX is a premier ed-tech platform dedicated to bridging the gap between theoretical knowledge and practical application. 
+                We empower students with cutting-edge skills in a fully interactive digital environment. Our Platform Is MSME, NCS, QCC, UASL & ISO 9001-2015 Certified With Quality Education And Its Founder Of Mr. Prasoon Mishra
+            </p>
+            <div class="media-grid">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80" alt="Team 1" class="media-item">
+                <div class="video-container media-item">
+                    <!-- Placeholder video -->
+                    <video autoplay muted loop>
+                        <source src="Skilltix Vedio.mp4" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <img src="Untitled design.jpg" alt="Team 2" class="media-item">
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section">
+        <h2 class="section-title">Our Courses</h2>
+        <div class="card-container">
+            <!-- Course 1 -->
+            <div class="card reveal">
+                <img src="graphic-designer.webp" alt="Web Dev">
+                <div class="card-content">
+                    <h3>Designing</h3>
+                    <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(4.8)</span>
+                    </div>
+                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSewVe1JIwOY5f9_nK9HuiVORgX2f1I9c7lnfLuspwuwBv2bkA/viewform?usp=header" class="apply-btn glow-btn">Apply Now</a>
+                </div>
+            </div>
+
+    <!-- Internships Section -->
+    <section id="internships" class="section">
+        <h2 class="section-title">Internships</h2>
+        <div class="internship-card reveal">
+            <img src="scse-banner.jpg" alt="Internships Programs">
+            <h3 class="internship-title">Professional Internship Programs</h3>
+            <div class="internship-details">
+                <div class="prices">
+                    <h1 style="color: brown; font-size: medium;">Special Offer</h1>
+                    <span class="price-original">₹7199/-</span>
+                    <span class="price-discount">₹5199/-</span>
+                </div>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEWYO1YrirzES0aY9kOrAf4UxboBbDFYRQ1hpjTXI4l6AopA/viewform?usp=header" class="apply-btn glow-btn">Apply Now</a>
+            </div>
+            <div class="ratings center-ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(Top Rated)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section id="books" class="section">
+        <h2 class="section-title">Library</h2>
+        <div class="library-container reveal">
+            <img src="books_library.jpg" alt="Library" class="library-img">
+            <div class="overlay">
+                <a href="..." class="apply-btn glow-btn">Explor Books</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Faculty Section -->
+<section id="faculty">
+    <h2>Our Faculty</h2>
+
+    <div class="faculty-slider-container">
+        <div class="faculty-slider">
+
+            <!-- Faculty 1 -->
+            <div class="faculty-member" data-rating="4.9">
+                <img src="Prasoon.jpg" alt="Faculty Member 1">
+                <h4>Mr. Prasoon Mishra</h4>
+                <p>Founder Of Plateform</p>
+                <div class="faculty-details">
+                    <span>Certified By SGTU</span>
+                    <div class="star-rating"></div>
+                </div>
+            </div>
+
+            <!-- Faculty 2 -->
+            <div class="faculty-member" data-rating="4.8">
+                <img src="Abilash img.jpg" alt="Faculty Member 2">
+                <h4>Mr. Abhilash Sharma</h4>
+                <p>Co Founder</p>
+                <div class="faculty-details">
+                    <span>Certified By IBM</span>
+                    <div class="star-rating"></div>
+                </div>
+            </div>
+
+            <!-- Faculty 3 -->
+            <div class="faculty-member" data-rating="4.5">
+                <img src="WhatsApp Image 2025-12-10 at 11.30.05_3e894ec7.jpg" alt="Faculty Member 3">
+                <h4>Ms. Sudiksha Singh Baghel</h4>
+                <p>CEO / Director</p>
+                <div class="faculty-details">
+                    <span>Certified</span>
+                    <div class="star-rating"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="slider-btn prev-btn">&#10094;</button>
+        <button class="slider-btn next-btn">&#10095;</button>
+    </div>
+</section>
+
+<style>
+/* Faculty Slider Styles */
+#faculty {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.faculty-slider-container {
+    max-width: 350px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+
+.faculty-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.faculty-member {
+    min-width: 100%;
+    box-sizing: border-box;
+    background: #94c0c2;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.faculty-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #007bff;
+}
+
+.faculty-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.star-rating {
+    color: #f8d64e;
+    font-size: 1rem;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+</style>
+
+<script>
+// Slider
+const slider = document.querySelector(".faculty-slider");
+const members = document.querySelectorAll(".faculty-member");
+
+let index = 0;
+let autoSlide;
+
+// Manual Slide (Buttons)
+document.querySelector(".next-btn").addEventListener("click", () => {
+    nextSlide();
+    resetAutoSlide();
+});
+
+document.querySelector(".prev-btn").addEventListener("click", () => {
+    prevSlide();
+    resetAutoSlide();
+});
+
+// Functions
+function nextSlide() {
+    index = (index + 1) % members.length;
+    slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function prevSlide() {
+    index = (index - 1 + members.length) % members.length;
+    slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+// Auto Slide Function
+function startAutoSlide() {
+    autoSlide = setInterval(() => {
+        nextSlide();
+    }, 3000); // 3 seconds → you can change this time
+}
+
+function resetAutoSlide() {
+    clearInterval(autoSlide);
+    startAutoSlide();
+}
+
+// Start Auto Slide Initially
+startAutoSlide();
+
+// Auto Star Rating
+document.querySelectorAll(".faculty-member").forEach(member => {
+    let rating = member.dataset.rating;
+    let stars = "★".repeat(Math.round(rating));
+    member.querySelector(".star-rating").innerHTML = stars;
+});
+</script>
+
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-wrapper reveal">
+            <form class="contact-form glass-form" onsubmit="submitForm(event, 'Contact')">
+                <h3>Get in Touch</h3>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message"></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <style>
+    .social-icons a {
+        font-size: 28px;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    /* Brand Colors */
+    .fa-envelope { color: #D44638; } 
+    .fa-facebook-f { color: #1877F2; }     /* Blue */
+    .fa-twitter { color: #1DA1F2; }        /* Twitter Blue */
+    .fa-linkedin-in { color: #0A66C2; }    /* LinkedIn Blue */
+    .fa-instagram { 
+        color: #E4405F;                    /* Instagram Pink */
+    }
+    .fa-youtube { color: #FF0000; }        /* Red */
+    .fa-whatsapp { color: #25D366; }       /* Green */
+
+    /* Hover Effect */
+    .social-icons a:hover {
+        transform: scale(1.2);
+        transition: 0.3s;
+    }
+</style>
+
+            <div class="social-icons">
+                 <a href="mailto:skilltix98@gmail.com"><i class="fas fa-envelope"></i></a>
+                 <a href="#"><i class="fab fa-whatsapp"></i></a>  
+                <a href="https://www.facebook.com/share/1A2R48cJhH/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/skilltix__?igsh=MXdxMnNjNzQweHZidQ=="><i class="fab fa-instagram"></i></a>
+    <a href="https://x.com/SKILLTIX171246?t=uXjwRvKroJoCWtmghl8Bxg&s=08"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/company/skilltix/"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.youtube.com/@Skilltix98"><i class="fab fa-youtube"></i></a>       <!-- YouTube Added --> 
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SKILLTIX. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Modals -->
+
+    <!-- Course Apply Modal -->
+    <div id="courseModal" class="modal">
+        <div class="modal-content glass-form">
+            <span class="close-btn" onclick="closeModal('courseModal')">&times;</span>
+            <h3 id="modalTitle">Apply for Course</h3>
+            <form onsubmit="submitForm(event, 'Course Application')">
+                <input type="hidden" id="courseInput">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-group">
+                    <label>Contact Number</label>
+                    <input type="tel" required>
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" required>
+                </div>
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content login-box">
+            <span class="close-btn" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Welcome Back</h2>
+            <form onsubmit="submitForm(event, 'Login')">
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                </div>
+                <!-- Changed 'a' tag to button for functionality -->
+                <button type="submit" style="background:none; border:none; width:100%;">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Submit
+                    </a>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
